@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://dotnetdev.kr/blog/2020-12-20-dotnetdev/</loc>
+    <lastmod>2020-12-20T12:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dotnetdev.kr/docs/my-new-doc/</loc>
+    <lastmod>2020-11-01T12:54:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dotnetdev.kr/blog/</loc>
+    <lastmod>2020-12-20T12:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dotnetdev.kr/</loc>
+    <lastmod>2020-12-20T12:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dotnetdev.kr/docs/</loc>
+    <lastmod>2020-11-01T12:54:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dotnetdev.kr/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dotnetdev.kr/tags/</loc>
+  </url>
+  
+</urlset>
