@@ -1,0 +1,36 @@
+baseURL = "https://dotnetdev.kr/"
+languageCode = "ko-kr"
+title = "닷넷데브"
+description = "닷넷데브는 국내 닷넷 개발자들간의 정보 공유와 교류를 위한 커뮤니티입니다."
+theme = "kube"
+Paginate = 4
+[Params]
+  RSSLink = "/index.xml"
+  author = "닷넷데브"
+  github = "https://github.com/dotnetdev-kr"
+  twitter = ""
+  email = ""
+[[menu.main]]
+    name = "닷넷데브 포럼"
+    weight = -300
+    url = "https://forum.dotnetdev.kr/"
+[[menu.main]]
+    name = "YouTube"
+    weight = -250
+    url = "https://www.youtube.com/channel/UCxCPX4tUbFyMseJVjVwcb9g"
+[[menu.main]]
+    name = "Medium 블로그"
+    weight = -200
+    url = "https://medium.com/dotnetdev"
+[[menu.main]]
+    name = "Github"
+    weight = -150
+    url = "https://github.com/dotnetdev-kr"
+[[menu.main]]
+    name = "Slack"
+    weight = -100
+    url = "https://krdotnet.slack.com/"
+[[menu.main]]
+    name = "Facebook 그룹"
+    weight = -50
+    url = "https://www.facebook.com/groups/dotnetdev.kr"

@@ -1,0 +1,54 @@
+{{ define "title"}} {{ .Title}} {{end}}
+{{ define "header"}} {{ partial "header" .}} {{end}}
+
+{{ define "main"}}
+<div class="push-center" itemscope itemtype="http://schema.org/BlogPosting">
+    {{ template "_internal/schema.html" . }}
+<div id="hero">
+    <h1 itemprop="headline">  {{.Title}}</h1>
+    {{ if .Description }}
+<blockquote itemprop="description">{{ .Description }}</blockquote>
+{{ end }}
+<time class="post-time">{{ partial "post/meta" . }}</time>
+</div>
+<div id="post-box">
+<div id="post" itemprop="articleBody">
+    
+    {{.Content | safeHTML}}
+
+</div>
+
+<div class="form-subscribe">
+    <div id="form-subscribe-success" style="display: none;"></div>
+<div id="form-subscribe-box">
+        {{ range .Params.author }}
+        <div>
+            <h4>{{ .name }} </h4>
+            <a href="mailto:{{.email}}">{{ .email }}</a> | <a href="{{.linkurl}}">{{ .linklabel }}</a>
+            <p>{{.bio}}</p>
+        </div>
+        {{ end }}
+        <hr/>
+        <h4>한국 WSL 사용자 그룹에 참여하기.</h4>
+        <p>WSL(Windows Subsystem for Linux) 와 Linux 에 대해 이야기 해보세요.</p>
+        <div id="action-buttons">
+            <a class="button primary big" href="/" 
+              onclick="_gaq.push(['_trackEvent', 'kube', 'download']);">더 알아보기</a> 
+          </div>
+    </div>
+</div>
+
+    <div class="">
+        {{ partial "post/related-content" . }}
+    </div>
+    
+    {{ if .Site.DisqusShortname }}
+    <article>
+        {{ template "_internal/disqus.html" . }}
+    </article>
+    {{ end }}
+    
+</div>
+</div>
+{{ end }}
+{{ define "footer"}} {{ partial "footer.html" .}} {{ end }}

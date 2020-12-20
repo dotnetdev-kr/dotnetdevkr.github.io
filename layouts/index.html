@@ -1,0 +1,67 @@
+{{ define "title"}} {{ .Site.Title}} {{end}}
+{{ define "header"}} {{ partial "header" .}} {{end}}
+{{ define "main"}}
+
+<div id="main">
+  <div id="hero">
+    <h1>{{.Title}}</h1>
+    <p>{{.Description}}</p>
+  </div>
+  <div id="action-buttons">
+    <a class="button primary big" href="{{index .Params.buttons.links 0}}" 
+      onclick="_gaq.push(['_trackEvent', 'kube', 'download']);">{{index .Params.buttons.titles 0}}</a> 
+    <a class="button outline big" href="{{index .Params.buttons.links 1}}" 
+      onclick="_gaq.push(['_trackEvent', 'kube', 'download']);">{{index .Params.buttons.titles 1}}</a> 
+    <a class="button outline big" href="{{index .Params.buttons.links 2}}" 
+      onclick="_gaq.push(['_trackEvent', 'kube', 'github']);">{{index .Params.buttons.titles 2}}</a>
+    <p>{{ .Params.note }}</p>
+  </div>
+  {{ if .Params.banner }}
+  <div class="message focus" data-component="message"> <span class="close small"></span>
+    <a class="button inverted small " href="{{ .Params.banner.button.link }}" >{{ .Params.banner.button.text }}</a> 
+    {{ .Params.banner.text }}
+  </div>
+  {{ end }}
+  <div id="kube-features">
+    <div class="row gutters">
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Baseline" height="48" src="{{ "/img/kube/icon-baseline.png" | relURL }}" width="48">
+        </figure>
+        <h3>{{ .Params.features.first.title }}</h3>
+        <p>{{ .Params.features.first.description }}</p>
+      </div>
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Typography" height="48" src="{{ "/img/kube/icon-typo.png" | relURL }}" width="48">
+        </figure>
+        <h3>{{ .Params.features.second.title }}</h3>
+        <p>{{ .Params.features.second.description }}</p>
+      </div>
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">
+        </figure>
+        <h3>{{ .Params.features.third.title }}</h3>
+        <p>{{ .Params.features.third.description }}</p>
+      </div>
+    </div>
+    <!-- <div class="row gutters">
+      <div class="col col-4 item">
+        <h4>Mobile-first Design</h4>
+        <p>Every element in kube is mobile-first and fully embraces latest and greatest tech.</p>
+      </div>
+      <div class="col col-4 item">
+        <h4>Cross-browser</h4>
+        <p>Kube works in all modern browsers, both desktop and mobile, including latest Chrome, Firefox, Safari, Opera, IE and Edge.</p>
+      </div>
+      <div class="col col-4 item">
+        <h4>License</h4>
+        <p>Kube licensed under <a href="https://opensource.org/licenses/MIT">MIT</a>.<br>
+      Kube Framework is absolutely free for personal or commercial use.</p>
+    </div>
+  </div> -->
+</div>
+</div>
+{{ end }}
+{{ define "footer"}} {{ partial "footer" .}} {{end}}
