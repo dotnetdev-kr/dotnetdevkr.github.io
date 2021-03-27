@@ -6,11 +6,6 @@ note: "커뮤니티에서 활동하려면, 커뮤니티 규정에 동의해야 �
 buttons:
     titles: ["닷넷데브 포럼", "닷넷데브 YouTube", "닷넷데브 Medium 블로그"]
     links: ["https://forum.dotnetdev.kr/", "https://www.youtube.com/channel/UCxCPX4tUbFyMseJVjVwcb9g", "https://medium.com/dotnetdev"]
-banner:
-    text: ".NET Conf 2021 x Seoul 온라인, 지금 바로 등록하세요!"
-    button: 
-        text: "자세히 보기"
-        link: "https://2021.dotnetdev.kr"
 features:
     first:
         title: "포럼 참여"
