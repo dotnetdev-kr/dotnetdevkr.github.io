@@ -7,10 +7,10 @@ buttons:
     titles: ["닷넷데브 포럼", "닷넷데브 YouTube", "닷넷데브 Medium 블로그"]
     links: ["https://forum.dotnetdev.kr/", "https://www.youtube.com/channel/UCxCPX4tUbFyMseJVjVwcb9g", "https://medium.com/dotnetdev"]
 banner:
-    text: "NET Conf Mini 21.04 온라인, 지금 바로 등록하세요!"
+    text: "닷넷데브 포럼으로 바로가기"
     button: 
-        text: "자세히 보기"
-        link: "https://dotnetconf.kr/mini/2104"
+        text: "이동"
+        link: "https://forum.dotnetdev.kr/"
 features:
     first:
         title: "포럼 참여"
